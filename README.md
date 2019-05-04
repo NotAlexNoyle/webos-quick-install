@@ -4,6 +4,11 @@ WebOS Quick Install v4.7.0u
 
 [![](http://i57.tinypic.com/rc7all_th.png)](http://oi57.tinypic.com/rc7all.jpg)
 
+Donate to support the new maintainer:
+https://www.paypal.me/NotAlexNoyle
+
+Donate to support the original developer:
+https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7G5QLAXMVVSGY
 
 This program is intended for use with WebOS applications that are in-testing, which under section 4.2 of the Palm SDK License Agreement allows for such unapproved applications to be installed on Palm devices.  Applications installed with WebOS Quick Install have not be tested by Palm and are installed at your own risk.
 
@@ -22,10 +27,6 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 * Multiple device support
 * Supports Open webOS/LuneOS
 * Supports English, French, German, and Simplified Chinese
-
-
-**Setup Guide/Problem Troubleshooting**
-* If you would like step-by-step directions on how to get things up and running, or are encountering some issues, I highly recommend checking out the official **[WOSQI Homebrew Guide](http://bit.ly/wosqi-guide)**.
 
 ------------------------------
 **What's new in v4.7.0u:**
@@ -55,11 +56,7 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 
 13. Updated "about" window
 
-14. Fixed package icon display in Package Viewer window
-
-15. Fixed package screenshot display in Package Viewer window
-
-16. Several other minor edits and bug fixes (see the commit history at https://github.com/NotAlexNoyle/WebOS-Quick-Install for a comprehensive comparison)
+14. Several other minor edits and bug fixes (see the commit history at https://github.com/NotAlexNoyle/WebOS-Quick-Install for a comprehensive comparison)
 
 ------------------------------
 **Planned for future versions:**
@@ -98,17 +95,16 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 
 **Requirements**
 
-* [Java 1.7 or greater](http://www.java.com/en/download/manual.jsp)
- * For Mac OS X, once you've installed Java 1.6, run /Applications/Utilities/Java/Java Preferences. Then click and drag Jave SE 6 to top of both list, and exit the program. This will set Java 1.6 as the default version to use.
+* [OpenJDK 1.7 or greater](https://www.adoptopenjdk.net/)
 
 * Novacom or [Adb](http://lifehacker.com/the-easiest-way-to-install-androids-adb-and-fastboot-to-1586992378)
- * This will get installed automatically when you run WebOS Quick Install (except on linux for now). ADB is required for LuneOS only.
+ * Novacom will get installed automatically when you run WebOS Quick Install (except on linux for now). ADB is required for LuneOS only.
 
 * DevMode enabled
  * This can be done on your device by typing "upupdowndownleftrightleftrightbastart", opening the DeveloperMode app, and enabling the feature. Not required for LuneOS.
 
-Lastly, when you plug in the device, if you want to use WebOS Quick Install, choose the "Just Charge" option on the device.
+* When you plug in the device, if you want to use WebOS Quick Install, choose the "Just Charge" option on the device.
 
 **Running WebOS Quick Install**
 
-* Simply double-click WebOSQuickInstall.jar and (as long as Java is installed properly) it will launch
+* Simply double-click WebOSQuickInstall.jar and (as long as Java is installed properly) it will launch.
