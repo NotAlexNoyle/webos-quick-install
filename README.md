@@ -1,4 +1,4 @@
-WebOS Quick Install v4.7.0u
+WebOS Quick Install v4.7.1u
 ===================
 > **NOTICE: THIS TOOL IS DESIGNED FOR LEGACY PALM/HP WEBOS AND SOME VERSIONS OF LUNEOS. IT IS NOT COMPATIBLE WITH WEBOS OSE OR LG WEBOS.**
 
@@ -29,40 +29,22 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 * Supports English, French, German, and Simplified Chinese
 
 ------------------------------
-**What's new in v4.7.0u:**
+What's new in v4.7.1u:
 ------------------------------
 
-1. Now uses user Java preferences rather than system Java preferences
+1. Fixed some code spacing and indentation
 
-2. Fixed several NullPointerException errors
+2. Removed unnecessary files
 
-3. Fixed blank package description icons/screenshots in Package Viewer window
+3. Fixed compatibility with early versions of Java 7
 
-4. Imported and made use of JPowerShell API in order to implement an awesome powershell self-elevating permissions hack that triggers UAC to start novacom (from https://github.com/profesorfalken/jPowerShell)
-
-5. Converted project from NetBeans to Eclispe
-
-6. Converted project from Java 6/CC1.5 to Java 12/CC11. Java 7 or above is now reccomended, as is the use of OpenJDK (https://www.adoptopenjdk.net)
-
-7. Install folder is no longer created until novacom is detected
-
-8. Most of the novacom driver detection code is re-written from the ground up to better support Linux and macOS on all architectures, including armhf. This means that novacom can now be detected accurately on headless servers, or even a Raspberry Pi! Windows novacom detection support is retained from earlier versions
-
-9. On Windows and Linux, if novacom is installed, but not running, it will now be started. (This is not needed on macOS, because novacomd runs perpetually once installed)
-
-11. If the Install folder is empty, it will now be deleted upon exit
-
-12. Re-hosted webos-clock-themer repository at https://github.com/NotAlexNoyle/WebOS-Clock-Themer/
-
-13. Updated "about" window
-
-14. Several other minor edits and bug fixes (see the commit history at https://github.com/NotAlexNoyle/WebOS-Quick-Install for a comprehensive comparison)
+4. Bumped version number, and made title automatically adapt to new version numbers
 
 ------------------------------
-**Planned for future versions:**
+Planned for future versions:
 ------------------------------
 
-1. Fix a lot of code spacing, order, and indentation
+1. Fix more code spacing and indentation (Currently up to FeedViewer.java)
 
 2. Fix several eclipse warnings
 
@@ -78,20 +60,29 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 
 8. Add support for BSDs and Solaris-based operating systems (and possibly more)
 
-9. Fix missing splash screen
+9. Distrbute operating system-specific packages with icons (.exe, .app, etc) instead of .jar for everything.
 
-10. Distrbute operating system-specific packages with icons (.exe, .app, etc) instead of .jar for everything.
+10. Fix armhf device detection
 
-11. Fix armhf device detection
+11. Locate and remove unwanted loop when loading image assets in PackageViewer upon first launch
 
-12. Locate and remove unwanted loop when loading image assets in PackageViewer upon first launch
+12. Fix layout of About window on MacOS
 
-13. Fix layout of About window on MacOS
+13. Fix Linux novacomd installation, and add support for installing novacomd on armhf
 
-14. Fix Linux novacomd installation, and add support for installing novacomd on armhf
+14. Work on community feedback and implement community requests!
 
-15. Work on community feedback and implement community requests!
+15. Fix code order / refactor in general.
 
+16. Update translations
+
+17. Resolve this issue: https://github.com/JayCanuck/webos-quick-install/issues/4
+
+18. Fulfill this request: https://github.com/JayCanuck/webos-quick-install/issues/3
+
+19. Add "continue anyway" option in the "there are no devices currently connected" pane, and change "ok" to "quit"
+
+20. Fix splash screen
 
 **Requirements**
 

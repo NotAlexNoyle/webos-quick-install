@@ -2,8 +2,10 @@ package ipkg;
 
 /**
  * @author Jason Robitaille
+ * @maintainer NotAlexNoyle
  */
 public enum PackageFilter {
+	
     Applications("Application"),
     Kernels("Kernel"),
     Linux_Apps("Linux Application"),
@@ -16,10 +18,16 @@ public enum PackageFilter {
 
     private String type;
     PackageFilter(String val) {
+    	
         type = val;
+        
     }
+    
     @Override
     public String toString() {
+    	
         return type;
+        
     }
+    
 }

@@ -44,7 +44,12 @@ import ipkg.PackageEntry;
 import ipkg.PackageFilter;
 import ipkg.PackageManager;
 
+/**
+ * @author Jason Robitaille
+ * @maintainer NotAlexNoyle
+ */
 public class FeedViewer extends javax.swing.JDialog {
+	
     private ResourceBundle bundle;
     private PackageManager pkgMgr;
     private final String UNKNOWN_VALUE;
@@ -76,6 +81,7 @@ public class FeedViewer extends javax.swing.JDialog {
     private static final int BUFFER_SIZE = 4096;
 
     public FeedViewer(java.awt.Frame parent, WebOSConnection wc, PackageManager pm) {
+    	
         super(parent);
         bundle = WebOSQuickInstallApp.bundle;
         URL bgURL = getClass().getResource("/resources/background2.jpg");

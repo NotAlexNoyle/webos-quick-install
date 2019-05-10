@@ -9,32 +9,46 @@ import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.JOptionPane;
 
+/**
+ * @author Jason Robitaille
+ * @maintainer NotAlexNoyle
+ */
 public class FeedLoader extends javax.swing.JDialog {
+	
     private ResourceBundle bundle;
     private WebOSConnection webOS;
     public PackageManager pkgMgr;
     public Timer t;
 
     public FeedLoader(java.awt.Frame parent, WebOSConnection connection) {
+    	
         super(parent);
         bundle = WebOSQuickInstallApp.bundle;
         initComponents();
         t = new Timer();
         webOS = connection;
-        if(!webOS.isConnected()) {
+        if(! webOS.isConnected()) {
+        	
             DeviceInfo info = webOS.getDeviceInfo();
-            if(info!=null && !info.model().equals(DeviceInfo.Model.Unknown.toString())) {
-                JOptionPane.showMessageDialog(rootPane, MessageFormat.format(bundle
-                        .getString("{0}_IS_DISCONNECTED._PLEASE_RECONNECT_THEN_TRY_AGAIN."),
-                        new Object[] {info.model()}));
-            } else {
-                JOptionPane.showMessageDialog(rootPane, bundle
-                        .getString("DEVICE_IS_DISCONNECTED._PLEASE_RECONNECT_THEN_TRY_AGAIN."));
+            if(info != null && ! info.model().equals(DeviceInfo.Model.Unknown.toString())) {
+            	
+                JOptionPane.showMessageDialog(rootPane, MessageFormat.format(bundle.getString("{0}_IS_DISCONNECTED._PLEASE_RECONNECT_THEN_TRY_AGAIN."), new Object[] {info.model()}));
+            } 
+            else {
+            	
+                JOptionPane.showMessageDialog(rootPane, bundle.getString("DEVICE_IS_DISCONNECTED._PLEASE_RECONNECT_THEN_TRY_AGAIN."));
+            
             }
+            
             t.schedule(new DoDispose(), 200);
-        } else {
-            t.schedule(new DoLoad(), 200);
+        
         }
+        else {
+        	
+            t.schedule(new DoLoad(), 200);
+        
+        }
+        
     }
 
     /** This method is called from within the constructor to
@@ -57,30 +71,38 @@ public class FeedLoader extends javax.swing.JDialog {
         setForeground(new java.awt.Color(219, 219, 219));
         setIconImage(null);
         setModal(true);
-        setName("transfer"); // NOI18N
+        setName("transfer");
         setResizable(false);
         setUndecorated(true);
         addWindowListener(new java.awt.event.WindowAdapter() {
+        	
             public void windowActivated(java.awt.event.WindowEvent evt) {
+            	
                 formWindowActivated(evt);
+                
             }
             public void windowClosed(java.awt.event.WindowEvent evt) {
+            	
                 formWindowClosed(evt);
+                
             }
             public void windowOpened(java.awt.event.WindowEvent evt) {
+            	
                 formWindowOpened(evt);
+                
             }
+            
         });
 
         jLayeredPane1.setBackground(new java.awt.Color(219, 219, 219));
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, new java.awt.Color(204, 204, 204), null, null)));
-        jLayeredPane1.setName("jLayeredPane1"); // NOI18N
+        jLayeredPane1.setName("jLayeredPane1");
         jLayeredPane1.setOpaque(true);
 
         jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
-        jScrollPane2.setName("jScrollPane2"); // NOI18N
+        jScrollPane2.setName("jScrollPane2");
 
         jTextArea2.setBackground(new java.awt.Color(219, 219, 219));
         jTextArea2.setColumns(20);
@@ -97,7 +119,7 @@ public class FeedLoader extends javax.swing.JDialog {
         jScrollPane2.setBounds(10, 20, 240, 30);
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/activity.gif"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/activity.gif")));
         jLabel6.setText(bundle.getString("FeedLoader.jLabel6.text"));
         jLabel6.setName("jLabel6");
         jLayeredPane1.add(jLabel6);
@@ -112,16 +134,11 @@ public class FeedLoader extends javax.swing.JDialog {
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 262, Short.MAX_VALUE));
+        layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE));
 
         pack();
+        
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
@@ -129,9 +146,11 @@ public class FeedLoader extends javax.swing.JDialog {
     }//GEN-LAST:event_formWindowOpened
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+    	
     }//GEN-LAST:event_formWindowActivated
 
     private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+    	
     }//GEN-LAST:event_formWindowClosed
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -143,15 +162,24 @@ public class FeedLoader extends javax.swing.JDialog {
     // End of variables declaration//GEN-END:variables
 
     class DoLoad extends TimerTask  {
+    	
         public void run() {
-            pkgMgr = new PackageManager(webOS.getDeviceInfo(), webOS.listInstalled(),
-                    jTextArea2);
+        	
+            pkgMgr = new PackageManager(webOS.getDeviceInfo(), webOS.listInstalled(), jTextArea2);
             dispose();
+            
         }
+        
     }
+    
     class DoDispose extends TimerTask  {
+    	
         public void run() {
+        	
             dispose();
+            
         }
+        
     }
+    
 }

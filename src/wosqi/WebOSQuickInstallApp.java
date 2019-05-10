@@ -35,7 +35,7 @@ public class WebOSQuickInstallApp extends SingleFrameApplication {
         app.getFrame().setResizable(false);
         app.getFrame().setSize(630, 400);
         app.getFrame().setVisible(true);
-        app.getFrame().setTitle("WebOS Quick Install (v4.7.0u)");
+        app.getFrame().setTitle(bundle.getString("MainView.title") + " " + bundle.getString("MainView.version"));
         show(app);
         
     }
@@ -60,6 +60,7 @@ public class WebOSQuickInstallApp extends SingleFrameApplication {
      * Main method launching the application.
      */
     public static void main(String[] args) {
+    		    
         Logger logger = Logger.getLogger(org.jdesktop.application.SessionStorage.class.getName());
         logger.setLevel(java.util.logging.Level.OFF);
 

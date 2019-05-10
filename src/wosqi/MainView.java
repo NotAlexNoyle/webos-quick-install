@@ -8,6 +8,7 @@ import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.geom.RoundRectangle2D;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,6 +24,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.prefs.Preferences;
 
+import javax.imageio.ImageIO;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -32,6 +34,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
+import javax.swing.JWindow;
 import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
