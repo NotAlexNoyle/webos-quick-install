@@ -36,7 +36,7 @@ What's new in v4.7.2u:
 
 1. Fixed compatibility with Java 7-10
 
-2. Added eclipse-related files so others can more easilly experiment with the project
+2. Added eclipse-related files so others can more easily experiment with the project
 
 ------------------------------
 What's new in v4.7.1u:
