@@ -39,18 +39,6 @@ What's new in v4.7.2u:
 2. Added eclipse-related files so others can more easily experiment with the project
 
 ------------------------------
-What's new in v4.7.1u:
-------------------------------
-
-1. Fixed some code spacing and indentation
-
-2. Removed unnecessary files
-
-3. Fixed compatibility with early versions of Java 7
-
-4. Bumped version number, and made title automatically adapt to new version numbers
-
-------------------------------
 Planned for future versions:
 ------------------------------
 
