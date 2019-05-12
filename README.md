@@ -1,4 +1,4 @@
-WebOS Quick Install v4.7.1u
+WebOS Quick Install v4.7.2u
 ===================
 > **NOTICE: THIS TOOL IS DESIGNED FOR LEGACY PALM/HP WEBOS AND SOME VERSIONS OF LUNEOS. IT IS NOT COMPATIBLE WITH WEBOS OSE OR LG WEBOS.**
 
@@ -29,6 +29,14 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 * Multiple device support
 * Supports Open webOS/LuneOS
 * Supports English, French, German, and Simplified Chinese
+
+------------------------------
+What's new in v4.7.2u:
+------------------------------
+
+1. Fixed compatibility with Java 7-10
+
+2. Added eclipse-related files so others can more easilly experiment with the project
 
 ------------------------------
 What's new in v4.7.1u:
