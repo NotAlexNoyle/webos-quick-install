@@ -4,7 +4,7 @@ WebOS Quick Install v4.7.2u
 
 [![](http://i57.tinypic.com/rc7all_th.png)](http://oi57.tinypic.com/rc7all.jpg)
 
-Download: https://github.com/NotAlexNoyle/webos-quick-install/releases/tag/v4.7.1u
+Download: https://github.com/NotAlexNoyle/webos-quick-install/releases/tag/v4.7.2u
 
 Donate to support the new maintainer:
 https://www.paypal.me/NotAlexNoyle
