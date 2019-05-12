@@ -30,6 +30,8 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 * Supports Open webOS/LuneOS
 * Supports English, French, German, and Simplified Chinese
 
+For a full record of changes from the legacy 4.6.0, check out the releases archive: https://github.com/NotAlexNoyle/webos-quick-install/releases
+
 ------------------------------
 What's new in v4.7.2u:
 ------------------------------
