@@ -2,7 +2,7 @@ WebOS Quick Install v4.7.2u
 ===================
 > **NOTICE: THIS TOOL IS DESIGNED FOR LEGACY PALM/HP WEBOS AND SOME VERSIONS OF LUNEOS. IT IS NOT COMPATIBLE WITH WEBOS OSE OR LG WEBOS.**
 
-[![](http://i57.tinypic.com/rc7all_th.png)](http://oi57.tinypic.com/rc7all.jpg)
+![demo](https://raw.githubusercontent.com/JayCanuck/webos-quick-install/master/screenshot.png)
 
 Download: https://github.com/NotAlexNoyle/webos-quick-install/releases/tag/v4.7.2u
 
