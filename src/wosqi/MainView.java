@@ -96,7 +96,7 @@ public class MainView extends FrameView {
 				}
 				else {
 					
-					JOptionPane.showMessageDialog(null, "Unsuppoted platform: " + os + ". Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+					JOptionPane.showMessageDialog(null, "Unsuppoted platform: " + os + ". Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 					
 				}
 				
@@ -114,7 +114,7 @@ public class MainView extends FrameView {
 				}
 				catch (IOException e) {
 					
-				 	JOptionPane.showMessageDialog(null, "Novacomd installation check failed with error: \"" + e + ".\" Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+				 	JOptionPane.showMessageDialog(null, "Novacomd installation check failed with error: \"" + e + ".\" Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 					
 				}
 								
@@ -127,7 +127,7 @@ public class MainView extends FrameView {
 			}
 			catch (IOException e) {
 				
-			 	JOptionPane.showMessageDialog(null, "Novacomd installation check failed with error: \"" + e + ".\" Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+			 	JOptionPane.showMessageDialog(null, "Novacomd installation check failed with error: \"" + e + ".\" Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 				
 			}
     		
@@ -151,7 +151,7 @@ public class MainView extends FrameView {
 		}
 		catch(IOException e) {
 			
-			JOptionPane.showMessageDialog(null, "Novacomd could not be detected due to this error: " + e.getMessage() + ". Please open up an issue at https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+			JOptionPane.showMessageDialog(null, "Novacomd could not be detected due to this error: " + e.getMessage() + ". Please open up an issue at https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 			
 		}
 		
@@ -168,7 +168,7 @@ public class MainView extends FrameView {
 		}
 		catch (IOException e) {
 			
-		 	JOptionPane.showMessageDialog(null, "Novacomd failed to start with error: \"" + e + ".\" Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+		 	JOptionPane.showMessageDialog(null, "Novacomd failed to start with error: \"" + e + ".\" Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 			
 		}
 						
@@ -214,7 +214,7 @@ public class MainView extends FrameView {
 		} 
 		catch (IOException e) {
 			
-			JOptionPane.showMessageDialog(null, "Novacomd could not be detected. Please open up an issue at https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+			JOptionPane.showMessageDialog(null, "Novacomd could not be detected. Please open up an issue at https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 			
 		}
 		
@@ -232,7 +232,7 @@ public class MainView extends FrameView {
 		}
 		catch (IOException e) {
 			
-			JOptionPane.showMessageDialog(null, "Novacomd could not be detected. Please open up an issue at https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+			JOptionPane.showMessageDialog(null, "Novacomd could not be detected. Please open up an issue at https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 			
 		}
 		
@@ -301,7 +301,7 @@ public class MainView extends FrameView {
 				}
 				catch (IOException e) {
 				    
-				 	JOptionPane.showMessageDialog(null, "Novacomd failed to start with error: \"" + e.getMessage() + ".\" Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+				 	JOptionPane.showMessageDialog(null, "Novacomd failed to start with error: \"" + e.getMessage() + ".\" Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
 					
 				}
     			
@@ -312,7 +312,7 @@ public class MainView extends FrameView {
     		    }
     		    else {
     		    	
-    			 	JOptionPane.showMessageDialog(null, "ERROR: Novacomd failed to start. Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+    			 	JOptionPane.showMessageDialog(null, "ERROR: Novacomd failed to start. Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
     		    	
     		    }
     			
@@ -339,7 +339,7 @@ public class MainView extends FrameView {
         		}
         		else {
         			
-    			 	JOptionPane.showMessageDialog(null, "Novacomd failed to start. Please open up an issue on https://github.com/NotAlexNoyle/WebOS-Quick-Install");
+    			 	JOptionPane.showMessageDialog(null, "Novacomd failed to start. Please open up an issue on https://git.trueog.net/NotAlexNoyle/webos-quick-install");
         			
         		}
         		

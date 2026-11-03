@@ -4,7 +4,7 @@ WebOS Quick Install v4.7.2u
 
 ![demo](https://raw.githubusercontent.com/JayCanuck/webos-quick-install/master/screenshot.png)
 
-Download: https://github.com/NotAlexNoyle/webos-quick-install/releases/tag/v4.7.2u
+Download: https://git.trueog.net/NotAlexNoyle/webos-quick-install/releases/tag/v4.7.2u
 
 Donate to support the new maintainer:
 https://www.paypal.me/NotAlexNoyle
@@ -30,7 +30,7 @@ Powered by JayCanuck's [webOSLib java library](https://github.com/JayCanuck/java
 * Supports Open webOS/LuneOS
 * Supports English, French, German, and Simplified Chinese
 
-For a full record of changes from the legacy 4.6.0, check out the releases archive: https://github.com/NotAlexNoyle/webos-quick-install/releases
+For a full record of changes from the legacy 4.6.0, check out the releases archive: https://git.trueog.net/NotAlexNoyle/webos-quick-install/releases
 
 ------------------------------
 What's new in v4.7.2u:
